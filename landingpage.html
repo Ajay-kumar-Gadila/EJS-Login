@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <h1>Welcome to the Dashboard!</h1>
+    <p>This is where you can view and manage your account information.</p>
+
+    <h2>User Information</h2>
+    <ul>
+      <li><strong>Name:</strong> John Doe</li>
+      <li><strong>Email:</strong> john.doe@example.com</li>
+      <li><strong>Mobile:</strong> +1 (555) 123-4567</li>
+    </ul>
+
+    <h2>Account Settings</h2>
+    <form action="/settings" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" value="John Doe"><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" value="john.doe@example.com"><br>
+
+      <label for="mobile">Mobile:</label>
+      <input type="tel" id="mobile" name="mobile" value="+1 (555) 123-4567"><br>
+
+      <button type="submit">Save Changes</button>
+    </form>
+  </body>
+</html>

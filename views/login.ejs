@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <style>
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 50px;
+    
+    right:auto;
+    left: auto;
+    
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  padding: 40px 80px;
+}
+
+.one{
+  padding: 10px 0px;
+  padding-bottom: 5px;
+}
+.onlef{
+  align-items: left;
+}
+.two{
+  padding: 4px 25px ;
+  margin-top: 12px;
+  color: blue;
+  background-color: cornsilk;
+}
+  </style>
+</head>
+<body>
+  <form method="POST" action="/login">
+    <div class="container">
+      <div class="main">
+    <label for="" class="onlef"> Name : </label><input type="text" name="username" placeholder="Username" class="one">
+    <label for="" class="onlef"> Email : </label><input type="email" name="email" placeholder="email" class="one"> 
+    <label for="" class="onlef"> Mobile : </label> <input type="text" name="mobile" placeholder="mobile" class="one"> 
+    <label for="" class="onlef"> Pasword : </label><input type="password" name="password" placeholder="Password" class="one">
+    <button type="submit" class="two">Login</button>
+  </div>
+  </div>
+  </form>
+</body>
+</html>
